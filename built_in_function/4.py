@@ -4,4 +4,16 @@
 # 2 - the function van be pre-defined function or lambda function
 # ------------------------------------
 
- 
+def formaeText(text):
+  return f"- {text} -"
+
+myText=["salah","ahmed","hamed"]
+myFormatedData=map(formaeText,myText)
+print(myFormatedData)
+for name in myFormatedData:
+  print(name)
+print("-_"*10)
+# -------------------------
+myText=["salah","ahmed","hamed"]
+for name in map(lambda text:  f"- {text.strip().capitalize()} -",myText):
+  print(name)
