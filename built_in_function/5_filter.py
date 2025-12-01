@@ -29,4 +29,31 @@ for name in filter(lambda name : name.startswith("a") or ("s")  ,mynames):
 #   # Hamed
 #   # Amer
 #   # Samy
+# ---------------------
+students=[("salah",40),
+          ("ahmed",50),
+          ("hamed",60)]
+passed=list(filter(lambda x:x[1]>=50,students))
+print(passed)
+# output
+# [('ahmed', 50), ('hamed', 60)]
+for p in list(filter(lambda x:x[1]>=50,students)):
+  print(f"-- {p} --")
+  # output
+  # -- ('ahmed', 50) --
+  # -- ('hamed', 60) --
+print("_-"*10)
+# ----------------------
+products=[{"name":"mouse","price":90},
+          {"name":"keyboard","price":100},
+          {"name":"monitor","price":101}
+          ]
 
+
+moreexpensive99=list(filter(lambda p:p["price"]>99,products))
+print (moreexpensive99)
+# output
+# [{'name': 'keyboard', 'price': 100}, {'name': 'monitor', 'price': 101}]
+for p in list(filter(lambda p:p["price"]>99,products)):
+  for k,v in p.items():
+    print(f"{k},{v}")
