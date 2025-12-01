@@ -1,4 +1,4 @@
-# Patient Management System (Add - Show - Filter by Age)
+# Patient Management System (Add - Show - Filter - Search)
 
 def add_patient():
     name = input("Enter patient name: ")
@@ -63,12 +63,38 @@ def filter_by_age():
         print("\n⚠ Please enter a valid age number.\n")
 
 
+# ✅ Search patient by name
+def search_by_name():
+    try:
+        search_name = input("Enter patient name to search: ").lower()
+
+        with open("patients.txt", "r", encoding="utf-8") as file:
+            patients = file.readlines()
+
+        found = False
+
+        print("\n🔍 Search Results:\n")
+        for line in patients:
+            name, age, diagnosis, medicine = line.strip().split(",")
+
+            if name.lower() == search_name:
+                print(f"Name: {name} | Age: {age} | Diagnosis: {diagnosis} | Medicine: {medicine}")
+                found = True
+
+        if not found:
+            print("⚠ No patient found with this name.\n")
+
+    except FileNotFoundError:
+        print("\n⚠ Patient file not found!\n")
+
+
 # ✅ Main Menu
 while True:
     print("\n1 - Add Patient")
     print("2 - Show All Patients")
     print("3 - Filter Patients by Age")
-    print("4 - Exit")
+    print("4 - Search Patient by Name")
+    print("5 - Exit")
 
     choice = input("Choose an option: ")
 
@@ -79,6 +105,8 @@ while True:
     elif choice == "3":
         filter_by_age()
     elif choice == "4":
+        search_by_name()
+    elif choice == "5":
         print("Program closed. Goodbye 👋")
         break
     else:
