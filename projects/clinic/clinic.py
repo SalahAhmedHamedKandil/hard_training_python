@@ -27,9 +27,9 @@ def show_patients():
         print("no pationts data")
         return
       print ( "-- patients' data --")
-      for line in data:
+      for i, line in enumerate(data,start=1):
         name,age,diagnosis,medicine=line.strip().split(",")
-        print(f"name:{name}\nage:{age}\ndiagnosis:{diagnosis}\nmedicine:{medicine}")
+        print(f"patient {i}\nname:{name}\nage:{age}\ndiagnosis:{diagnosis}\nmedicine:{medicine}")
         print("-"*15)
   except:
     print(NameError)
@@ -41,10 +41,10 @@ def search_patient():
       data=file.readlines()
       found=False
       print("\n-- search rusilt --\n")
-      for line in data:
+      for i,line in enumerate(data,start=1):
         name,age,diagnosis,medicine=line.strip().split(",")
         if search_name == name:
-          print(f"name:{name}\nage:{age}\ndiagnosis:{diagnosis}\nmedicine:{medicine}")
+          print(f"patient {i}\nname:{name}\nage:{age}\ndiagnosis:{diagnosis}\nmedicine:{medicine}")
           found=True
       if not found:
           print("⚠ No patient found with this name.\n")
@@ -58,7 +58,7 @@ def age_filter():
       with open (patients,"r",encoding="utf-8") as file:
          patient=file.readlines()
       patient_list=[]
-      for line in patient:
+      for i,line in enumerate(patient,start=1):
          name,age,diagnosis,medicine=line.strip().split(",")
          patient_list.append({"name":name,
                               "age":int(age),
@@ -70,7 +70,7 @@ def age_filter():
       else:
          print("-- matching patients --")
          for p in filter_fuction:
-            print (f"\nname => {p['name']}\nage => {p['age']}\ndiagnosis =>{p['diagnosis']}\nmedicine => {p['medicine']}")
+            print (f"\npatient {i}\nname => {p['name']}\nage => {p['age']}\ndiagnosis =>{p['diagnosis']}\nmedicine => {p['medicine']}")
             print("-"*15)
     except FileNotFoundError:
       print("NO FILE")

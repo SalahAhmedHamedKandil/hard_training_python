@@ -1,0 +1,32 @@
+30-Day Python Beginner Projects Plan
+ One simple project every day to build your Python skills step by step
+ • Day 1: Print a Welcome Message Program
+ • Day 2: Simple Calculator
+ • Day 3: Add Two Numbers from User Input
+ • Day 4: Even or Odd Checker
+ • Day 5: Age Calculator
+ • Day 6: Temperature Converter
+ • Day 7: Rectangle Area Calculator
+ • Day 8: Multiplication Table Generator
+ • Day 9: Number Guessing Game
+ • Day 10: Countdown Timer
+ • Day 11: Save Names to a File
+ • Day 12: Read Names from a File
+ • Day 13: Simple To-Do List
+ • Day 14: Expense Tracker
+ • Day 15: Currency Converter
+ • Day 16: Student Registration System
+ • Day 17: Average Grade Calculator
+ • Day 18: Password Generator
+ • Day 19: Search for an Item in a List
+ • Day 20: Sort a List Program
+ • Day 21: Simple Patient Management System
+ • Day 22: Mini Library Management System
+ • Day 23: Multiple Choice Quiz Program
+ • Day 24: Convert Text to Uppercase
+ • Day 25: Count Letters in a Text
+ • Day 26: Simple Text Encryption
+ • Day 27: Text Decryption Program
+ • Day 28: Rock-Paper-Scissors Game
+ • Day 29: Time Calculator
+ • Day 30: Final Project: Mini Management System
