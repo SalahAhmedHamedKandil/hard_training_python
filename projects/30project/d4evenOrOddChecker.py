@@ -6,4 +6,7 @@ def check_even_odd():
     print("invalid input \nplease enter a valid integer .")
     return
   if number % 2==0:
-    
+    print(f"the number ({number}) is even .")
+  else:
+    print(f"the number ({number}) is odd .")
+check_even_odd()
