@@ -23,7 +23,7 @@ while True:
   if choose =="0":
     print("thank u for using our app")
     break
-  multiplicationNumber=[0,1,2,3,4,5,6,7,8,9,10]
+  multiplicationNumber=range(1,15) # last nunber is 14 not 15
   print("-- result --")
   for n in multiplicationNumber:
     print(f"{numb}*{n}={n*numb}")
