@@ -6,7 +6,7 @@ print("-"*40)
 while True:
   print("enter 1 to generate a multiplication tabl .")
   print("enter 0 to close .")
-  choose=input("enter your choice : ")
+  choose=input("enter your choice : ").strip()
   while choose not in ("1","0"):
     print("unavalable choice.choose 1 or 0")
     choose=input("enter your choice :").strip()
@@ -15,7 +15,7 @@ while True:
       try:
         numb=float(input("enter number : ").strip())
         if numb<0:
-          print("please enter positie number")
+          print("please enter positive number")
           continue
         break
       except ValueError:
