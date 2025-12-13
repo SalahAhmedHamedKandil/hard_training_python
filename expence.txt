@@ -1,0 +1,2 @@
+10.0,<built-in method strip of str object at 0x000001F151B0B210>
+1.0,<built-in method strip of str object at 0x00007FF877DA02E0>
