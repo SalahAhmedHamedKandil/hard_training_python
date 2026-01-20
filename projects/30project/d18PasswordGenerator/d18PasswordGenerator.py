@@ -6,7 +6,7 @@ def deco_(funtion_):
         try:
             length=int(input("what is the passwords' length ? it have been moor than 6 :").strip())
             if length<6:
-                print("it have been moor than 6 ")
+                print("it have to been equal more than 6 ")
                 continue
             break
         except ValueError:
