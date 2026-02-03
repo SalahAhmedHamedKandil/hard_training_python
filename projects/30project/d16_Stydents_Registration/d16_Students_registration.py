@@ -1,6 +1,6 @@
 # student registration system
 # ---------------------------------
-# 1- add students in txt file (age,gade)
+# 1- add students in txt file (age,grade)
 # 2- read information from txt file 
 # 3- edite information (delete or edite)
 # ----------------------------------------

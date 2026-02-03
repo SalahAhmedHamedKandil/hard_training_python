@@ -1,0 +1,10 @@
+{
+    "python": {
+        "total": 10,
+        "available": 7
+    },
+    "java": {
+        "total": 9,
+        "available": 8
+    }
+}
