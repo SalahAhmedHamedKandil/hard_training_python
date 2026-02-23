@@ -3,5 +3,10 @@
         "total": 22,
         "available": 22,
         "borrowed": 0
+    },
+    "ahmed": {
+        "total": 0,
+        "available": 0,
+        "borrowed": 0
     }
 }
